@@ -11,6 +11,7 @@ body {
 .search-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 2ch;
   gap: 2ch;
 }
@@ -39,6 +40,7 @@ body {
 .result {
   display: none;
   justify-content: center;
+  align-items: center;
   gap: 3ch;
   padding: 5ch 4ch;
 }
@@ -108,4 +110,30 @@ body {
   color: white;
   font-weight: bold;
   border-radius: 0.5ch;
+}
+
+@media (max-width: 576px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .search-container button {
+    width: max-content;
+  }
+
+  .popup-message .message {
+    width: 250px;
+  }
+
+  .result {
+    flex-direction: column;
+  }
+
+  .result-data {
+    order: 2;
+  }
 }
