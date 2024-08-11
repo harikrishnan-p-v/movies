@@ -135,5 +135,6 @@ body {
 
   .result-data {
     order: 2;
+    min-width: 200px;
   }
 }
