@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="video-camera.png" type="image/x-icon" />
+    <title>Movie Searcher</title>
+  </head>
+  <body>
+    <div class="search-container">
+      <input type="text" name="movie-name" id="movie-name" />
+      <button id="search-button" onclick="GetMovieDetails()">search</button>
+    </div>
+    <div class="result" id="result">
+      <div class="result-data">
+        <p id="title"></p>
+        <p id="year"></p>
+        <p id="runtime"></p>
+        <p id="genere"></p>
+        <p id="plot"></p>
+      </div>
+      <div id="result-image">
+        <img src="" alt="move poster" id="poster" />
+      </div>
+    </div>
+    <div id="popup-message" class="popup-message">
+      <div class="message">
+        <img src="mark.png" alt="error image" />
+        <p id="message-data">Movie not available</p>
+        <button onclick="HideMessage()">OK</button>
+      </div>
+    </div>
+  </body>
+</html>
